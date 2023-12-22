@@ -1,7 +1,7 @@
 const express = require('express');
 const path = require('path');
 const http = require('http');
-const socketIO = require('https://collabboard-902ed428d0ea.herokuapp.com');
+const socketIO = require('node server.js');
 
 const app = express();
 const server = http.createServer(app);

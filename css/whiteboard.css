@@ -28,13 +28,17 @@ main {
     grid-row: 2;
 }
 
-canvas {
+#whiteboard{
     background-color: #fff;
-    cursor: crosshair;
-    border: 1px solid #ccc;
+            cursor: crosshair;
+            border: 1px solid #ccc;
+            max-width: 80vw; /* Maximal 80% der Viewport-Breite */
+            max-height: 80vh; /* Maximal 80% der Viewport-Höhe */
+            width: auto; /* Automatische Breite basierend auf max-width */
+            height: auto; /* Automatische Höhe basierend auf max-height */
+        }
 
 
-}
 
 .sidenav {
     height: 100%;
