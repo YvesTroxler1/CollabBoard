@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/Anmelde.css">
+    <title>Login</title>
+</head>
+<body>
+    <div class="background-image">
+        <div class="container">
+            <div class="form-container">
+                <h2 class="login-title">Anmelden</h2>
+                <form method="post" action="php/Login.php">
+                    <label for="benutzername">Benutzername:</label>
+                    <input type="text" name="Benutzername" required>
+                
+                    <label for="passwort">Passwort:</label>
+                    <input type="password" name="Passwort" required>
+                
+                    <button type="submit">Anmelden</button>
+                </form>
+        
+                <a href="register.html" class="RegistrierenLink">Noch keinen Account? Hier registrieren</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

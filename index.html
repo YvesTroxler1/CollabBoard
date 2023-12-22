@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">Header
+
+        </div>
+        <div class="main-content">
+            <span class="toggle-btn" onclick="toggleSidebar()"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 900 900" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></span>
+            <div class="sidenav" id="mySidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="Login.html">Sign Up</a>
+                <a href="Whiteboard.html">Whiteboards</a>
+                <a href="#">Clients</a>
+                <a href="#">Contact</a>
+            </div>
+            Main Content
+        </div>
+        <div class="footer">Footer</div>
+    </div>
+
+    <script>
+        function toggleSidebar() {
+            var sidenav = document.getElementById("mySidenav");
+            sidenav.style.width = sidenav.style.width === "250px" ? "0" : "250px";
+        }
+  
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+</body>
+</html>

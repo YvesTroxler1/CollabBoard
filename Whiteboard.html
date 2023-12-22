@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/whiteboard.css">
+    <title>Whiteboard</title>
+</head>
+<body>
+    <header>
+        <h1>Whiteboard App</h1>
+        <button id="generateLinkBtn" onclick="generateLink()">Generate Link</button>
+        <span class="toggle-btn" onclick="toggleSidebar()"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 900 900" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></span>
+    <div class="sidenav" id="mySidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="Login.html">Sign Up</a>
+        <a href="Whiteboard.html">Whiteboards</a>
+        <a href="index.html">Home</a>
+        <a href="#">Contact</a>
+    </header>
+
+    </header>
+
+    <main>
+        <canvas id="whiteboard"></canvas>
+    </main>
+
+    <script src="JS/sidebar.js"></script>
+    <script src="JS/script.js"></script>
+    <script src="server.js"></script>
+    
+    <script>
+   const socket = new WebSocket(`wss://<collabboard>.herokuapp.com`);
+    // Restlicher JS-Code bleibt unverändert...
+</script>
+</body>
+</html>
