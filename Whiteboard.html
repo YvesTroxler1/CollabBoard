@@ -29,10 +29,12 @@
     <script src="JS/script.js"></script>
     <script src="server.js"></script>
     
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.1.3/socket.io.js"></script>
     <script>
-   const socket = new WebSocket(`wss://<collabboard>.herokuapp.com`);
-    // Restlicher JS-Code bleibt unverändert...
-</script>
+        const room = window.location.pathname.substring(1); // Extrahiere den Raumnamen aus der URL
+        const socket = io.connect(window.location.origin); // Verbinde mit dem Socket.IO-Server
+
+        // Restlicher JS-Code bleibt unverändert...
+    </script>
 </body>
 </html>
-wwwww
