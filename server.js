@@ -8,11 +8,11 @@ const server = http.createServer(app);
 const io = socketIO(server);
 
 // Stelle sicher, dass der Server auf den öffentlichen Ordner zugreifen kann
-app.use(express.static(path.join(__dirname, 'Whiteboard')));
+app.use(express.static(path.join(__dirname, '/Whiteboard')));
 
 // Sendet die HTML-Datei für alle Anfragen an den Root-Pfad
 app.get('/:room', (req, res) => {
-    res.sendFile(path.join(__dirname, 'index.html'));
+    res.sendFile(path.join(__dirname, '/Whiteboard'));
 });
 
 
