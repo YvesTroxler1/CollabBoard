@@ -1,6 +1,6 @@
 const canvas = document.getElementById('whiteboard');
 const context = canvas.getContext('2d');
-const ws = new WebSocket('ws://localhost:3000'); // Ändere die URL entsprechend
+const ws = new WebSocket('https://collabboard-902ed428d0ea.herokuapp.com'); // Ändere die URL entsprechend
 
 ws.onmessage = (event) => {
     const data = JSON.parse(event.data);

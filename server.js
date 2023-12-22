@@ -1,7 +1,7 @@
 const express = require('express');
 const path = require('path');
 const http = require('http');
-const socketIO = require('socket.io');
+const socketIO = require('https://collabboard-902ed428d0ea.herokuapp.com');
 
 const app = express();
 const server = http.createServer(app);
@@ -12,7 +12,7 @@ app.use(express.static(path.join(__dirname, '/Whiteboard')));
 
 // Sendet die HTML-Datei für alle Anfragen an den Root-Pfad
 app.get('/:room', (req, res) => {
-    res.sendFile(path.join(__dirname, '/Whiteboard'));
+    res.sendFile(path.join(__dirname, '/Whiteboard/Whiteboard.html'));
 });
 
 
